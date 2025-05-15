@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3002;
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://playground-043.vercel.app", "http://localhost:5173"],
+    origin: ["https://playground-053.vercel.app", "http://localhost:5173"],
     credentials: true,
     optionsSuccessStatus: 200,
   })
