@@ -8,11 +8,11 @@ const commentSchema = new mongoose.Schema(
     },
     author: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "pg43User",
+      ref: "pg53User",
     },
     article: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "pg43Article",
+      ref: "pg53Article",
     },
   },
   {
@@ -20,4 +20,4 @@ const commentSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("pg43Comment", commentSchema);
+module.exports = mongoose.model("pg53Comment", commentSchema);

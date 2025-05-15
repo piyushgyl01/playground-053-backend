@@ -10,7 +10,7 @@ const tagSchema = new mongoose.Schema(
     articles: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "pg43Article",
+        ref: "pg53Article",
       },
     ],
   },
@@ -19,4 +19,4 @@ const tagSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("pg43Tag", tagSchema);
+module.exports = mongoose.model("pg53Tag", tagSchema);

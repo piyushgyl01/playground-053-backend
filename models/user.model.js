@@ -36,13 +36,13 @@ const userSchema = new mongoose.Schema(
     favouriteArticles: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "pg43Article",
+        ref: "pg53Article",
       },
     ],
     followingUsers: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "pg43User",
+        ref: "pg53User",
       },
     ],
   },
@@ -51,4 +51,4 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("pg43User", userSchema);
+module.exports = mongoose.model("pg53User", userSchema);

@@ -21,7 +21,7 @@ const articleSchema = new mongoose.Schema(
     ],
     author: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "pg43User",
+      ref: "pg53User",
     },
     favouritesCount: {
       type: Number,
@@ -30,7 +30,7 @@ const articleSchema = new mongoose.Schema(
     comments: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "pg43Comment",
+        ref: "pg53Comment",
       },
     ],
   },
@@ -39,4 +39,4 @@ const articleSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("pg43Article", articleSchema);
+module.exports = mongoose.model("pg53Article", articleSchema);
